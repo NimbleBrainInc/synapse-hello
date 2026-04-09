@@ -1,6 +1,13 @@
 # Hello World MCP App
 
+[![mpak](https://img.shields.io/badge/mpak-registry-blue)](https://mpak.dev/packages/@nimblebraininc/synapse-hello?utm_source=github&utm_medium=readme&utm_campaign=synapse-hello)
+[![NimbleBrain](https://img.shields.io/badge/NimbleBrain-nimblebrain.ai-purple)](https://nimblebrain.ai?utm_source=github&utm_medium=readme&utm_campaign=synapse-hello)
+[![Discord](https://img.shields.io/badge/Discord-community-5865F2)](https://nimblebrain.ai/discord?utm_source=github&utm_medium=readme&utm_campaign=synapse-hello)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
+
 Minimal reference implementation for building MCP apps with UIs. Python server (FastMCP) + React UI (Synapse SDK).
+
+**[View on mpak registry](https://mpak.dev/packages/@nimblebraininc/synapse-hello?utm_source=github&utm_medium=readme&utm_campaign=synapse-hello)** | **Built by [NimbleBrain](https://nimblebrain.ai?utm_source=github&utm_medium=readme&utm_campaign=synapse-hello)**
 
 ## Quick Start
 
