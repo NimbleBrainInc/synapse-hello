@@ -1,0 +1,62 @@
+{
+  "manifest_version": "0.4",
+  "name": "@nimblebraininc/synapse-hello",
+  "version": "0.1.0",
+  "description": "Hello World MCP App for NimbleBrain Platform",
+  "author": {
+    "name": "NimbleBrain Inc",
+    "email": "hello@nimblebrain.ai"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/NimbleBrainInc/synapse-hello"
+  },
+  "server": {
+    "type": "python",
+    "entry_point": "mcp_hello.server",
+    "mcp_config": {
+      "command": "python",
+      "args": [
+        "-m",
+        "mcp_hello.server"
+      ]
+    }
+  },
+  "tools": [
+    {
+      "name": "get_greeting",
+      "description": "Greet someone by name"
+    },
+    {
+      "name": "get_greet_count",
+      "description": "Get the number of greetings sent this session"
+    }
+  ],
+  "_meta": {
+    "org.mpaktrust": {
+      "mtf_version": "0.1",
+      "permissions": {
+        "filesystem": "none",
+        "network": "none",
+        "environment": "none",
+        "subprocess": "none",
+        "native": "none"
+      }
+    },
+    "ai.nimblebrain/host": {
+      "host_version": "1.0",
+      "name": "Hello",
+      "icon": "hand",
+      "category": "custom",
+      "placements": [
+        {
+          "slot": "sidebar.apps",
+          "resourceUri": "ui://hello/main",
+          "route": "@nimblebraininc/hello",
+          "label": "Hello",
+          "icon": "hand"
+        }
+      ]
+    }
+  }
+}
