@@ -1,6 +1,6 @@
 [project]
 name = "mcp-hello"
-version = "0.1.1"
+version = "0.2.0"
 description = "Hello World MCP App for NimbleBrain Platform"
 readme = "README.md"
 license = {text = "MIT"}
@@ -10,7 +10,7 @@ authors = [
 ]
 keywords = ["mcp", "hello", "nimblebrain", "platform"]
 dependencies = [
-    "fastmcp>=2.14.0",
+    "fastmcp>=4.0.0",
 ]
 
 [build-system]
@@ -36,6 +36,16 @@ line-ending = "auto"
 
 [dependency-groups]
 dev = [
+    "pytest>=8.0",
+    "pytest-asyncio>=0.25",
     "ruff>=0.13.1",
     "ty>=0.0.1a1",
+]
+
+[tool.pytest.ini_options]
+asyncio_mode = "auto"
+asyncio_default_fixture_loop_scope = "function"
+testpaths = ["tests"]
+filterwarnings = [
+    "error::mcp.MCPDeprecationWarning",
 ]
