@@ -2,7 +2,7 @@
   "manifest_version": "0.4",
   "name": "@nimblebraininc/synapse-hello",
   "display_name": "Synapse Hello",
-  "version": "0.1.2",
+  "version": "0.2.0",
   "license": "MIT",
   "description": "Hello World MCP App for NimbleBrain Platform",
   "author": {
